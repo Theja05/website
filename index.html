@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: black;
+}
+/* nav bar styles start */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f32b5a;
+    color: white;
+}
+ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px 60px;
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+/* nav bar styles end */
+/* body part  starts */
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1 .card1{
+    width: 50%;
+}
+.container1 .row1{
+    padding: 30px;
+}
+.container1 .row1 h1,.row1 p{
+    margin:40px 20px;
+}
+.container1 button{
+    padding:5px 15px;
+    background-color: rgba(250, 38, 102, 0.685);
+    color: white;
+    border: none;
+    margin: 20px;
+}
+.card1 abc{
+    height:417px;
+    width: 100%;
+}
+/* body parts end */
+/* another body part start */
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: bisque;
+    padding: 40px;
+}
+.container2 .card2{
+    width: 50%;
+}
+.imgs{
+    display: flex;
+}
+.first{
+    width: 50%;
+    padding: 10px;
+}
+.card2 .box{
+    margin: 130px 0;
+    background-color: rgb(253, 104, 104);
+    color: black;
+    display: inline-block;
+    width: 50%;
+}
+
+.box h1, .box p{
+    margin: 10px;
+}
+#grid {
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(248, 248, 187), rgb(253, 205, 213));
+    }
+/* another body part end */
+
+    /* nav bar mobile view start */
+    @media (max-width:576px) {
+        nav{
+            display: flex;
+            align-items: start;
+            background-color: #ff6347;
+            justify-content: start;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding:20px 0;
+        }
+        
+    }
+    /* nav bar mobile view end */
+    /* nav bar tablet view start */
+
+    @media (min-width:576px) and (max-width:992px) {
+        nav{
+            display: flex;
+            align-items: start;
+            background-color: #ff6347;
+            justify-content: start;
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li{
+            list-style-type: none;
+            padding:20px;
+        }
+        
+    }
+    /* nav bar tablet view end */
+    /* body part mobile view start */
+    @media(max-width:576px){
+        .container1 .card1{
+            width: 100%;
+        }
+    }
+    /* body part mobile  view end */
+    /* body part tablet  view start */
+
+    @media(min-width:576px) and (max-width:992px){
+        .container1 .card1{
+            width: 100%;
+        }
+    }
+    /* body part tablet  view end */
+    /* another body part mobile  view start */
+
+    @media(max-width:576px){
+        .container2 .card2{
+            width: 100%;
+        }
+    }
+    /* another body part mobile  view end */
+    /* anotherbody part tablet  view start */
+
+    @media(min-width:576px) and (max-width:992px){
+        .container2 .card2{
+            width: 100%;
+        }
+    }
+    </style>
+    /* another body part tablet  view end */
+<body>
+    <!-- nav bar starts -->
+    <nav>
+        <ul>
+            <li><b><a href="">Home</a></b></li>
+            <li><b><a href="">Order</a></b></li>
+            <li><b><a href="">Food</a></b></li>
+            <li><b><a href="">Restaurant</a></b></li>
+            <li><b><a href="">Testimonials</a></b></li>
+            <li><b><a href="">Contact Us</a></b></li>
+            <li><!-- Hamburger menu icon -->
+             <b> <a href="#menu">☰</a></b></li>
+        </ul>
+    </nav>
+    <!-- nav bar ends -->
+    <!-- body starts -->
+    <div class="container1">
+        <div class="card1">
+            <div class="row1" id="grid">
+                <h1>LOREM IPSUM</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quibusdam doloremque, rerum sequi quis ex voluptates temporibus at atque delectus necessitatibus eos? Adipisci ut eum harum! Iusto molestias consequuntur obcaecati. lor Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente corporis natus provident laborum, enim beatae temporibus praesentium non impedit suscipit illum quo culpa necessitatibus! Esse, officia.ng elit. Cumque accusamus, dolores </p>
+                <button type="button"><a href="">Click Me</a></button>
+            </div>
+        </div>
+        <div class="card1">
+            <div class="abc">
+                <img src="C:\Users\hi\OneDrive\Desktop\website\images\Burger.jpg"width="100%" height="392px"  alt="">
+            </div>
+
+        </div>
+    </div>
+    <!-- body ends -->
+    <!-- footer starts -->
+    <div class="container2" id="grid">
+        <div class="card2">
+            <div class="imgs">
+                <div class="first">
+                    <img src="C:\Users\hi\OneDrive\Desktop\website\images\stag.jpg"height="200px" width="100%" alt="">
+                    <img src="C:\Users\hi\OneDrive\Desktop\website\images\city.jpg"height="200px" width="100%" alt="">
+                </div>
+                <div class="first">
+                    <img src="C:\Users\hi\OneDrive\Desktop\website\images\food.jpg"height="404px" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="box">
+                <p class="1">LOREM IPSUM</p>
+                <h1>LOREM IPSUM <br> SET ADEMIR</h1>
+                <p class="2">Click<i class="fa-solid fa-right-long " style="margin: 3px; padding: 10px;"></i></p>
+                <P class="3">Hello world</P>
+            </div>
+        </div>
+    </div>
+    <!-- footer ends -->
+</body>
+</html>
